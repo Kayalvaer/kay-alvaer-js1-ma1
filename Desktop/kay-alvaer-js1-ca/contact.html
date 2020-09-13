@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="data:;base64,=" />
+</head>
+
+<body>
+    <header>
+        <nav class="country-nav">
+            <a href="index.html">
+                <h2 id="logo">African <span class="country-logo">countries</span></h2>
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="details.html">Details</a>
+                    </li>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <div class="form-nav"><a href="/">Back to Country lists</a></div>
+    <main class="form-container">
+        <!--<form id="contact-form" method="post" action="https://formdump.codeinstitute.net/">-->
+        <form id="contactForm">
+            <div>
+                <label>
+                    First name (required)
+                    <input name="" id="name" />
+                </label>
+                <div class="form-error" id="firstNameError">Please enter your first name</div>
+            </div>
+
+            <div>
+                <label>
+                    Subject (value minimum length 10 characters)
+                    <input text="subject" id="subject" />
+                </label>
+                <div class="form-error" id="lastNameError">Subject must be at least 10 characters</div>
+            </div>
+
+            <div>
+                <label>
+                    Email (required email format)
+                    <input name="email" id="email" />
+                </label>
+                <div class="form-error" id="emailError">Please enter a valid email address</div>
+            </div>
+
+            <div>
+                <label>
+                    Address (length minimum 25 characters)
+                    <input name="address" id="address" />
+                </label>
+                <div class="form-error" id="addressError">Address must be at least 25 characters</div>
+            </div>
+
+            <button>Search</button>
+        </form>
+    </main>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
